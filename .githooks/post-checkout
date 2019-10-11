@@ -1,3 +1,13 @@
 #!/bin/sh
 
 echo "Post checkout hook executed"
+
+for sd in */ ; do
+	f="${sd}.git"
+	echo "Folder ${sd}"
+	
+	if [ -f "$f" ]; then
+		echo "Refreshing ${sd} submodule"
+#		rm -rf $sd
+	fi
+done
