@@ -1,0 +1,4 @@
+[submodule "sub_repo_c"]
+	path = sub_repo_c
+	url = https://github.com/indikabw/repo_c.git
+	branch = branch_2
