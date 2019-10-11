@@ -8,6 +8,6 @@ for sd in */ ; do
 	
 	if [ -f "$f" ]; then
 		echo "Refreshing ${sd} submodule"
-#		rm -rf $sd
+		rm -rf $sd
 	fi
 done
