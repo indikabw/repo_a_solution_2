@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Configure the hooks folder to be .githooks (for version controlling purposes)
+git config --global core.hooksPath .githooks
+
+# Alternative:
+# Write post-checkout file to .git/hooks/
+#f='#!/bin/sh\n
+#
+#\recho "Updating submodules"\n
+#
+#\rfor sd in $(echo "*/") ; do\n
+#	\tf="${sd}.git"\n\n
+#	
+#	\tif [ -f "$f" ]; then\n
+#	\t\t	rm -rf $sd\n
+#	\tfi
+#\rdone\n
+#
+#\rgit submodule update --init --recursive'
+#
+#echo -e -n $f > .git/hooks/post-checkout
