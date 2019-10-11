@@ -25,7 +25,7 @@ git config --global core.hooksPath .githooks
 f='#!/bin/sh\n
 
 \rgit pull\n
-\rgit submodule update -f --remote'
+\rgit submodule update --remote'
 
 mkdir -p ~/bin
 echo -e -n $f > ~/bin/git-mbco-pull
