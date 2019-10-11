@@ -1,0 +1,8 @@
+[submodule "sub_repo_c"]
+	path = sub_repo_c
+	url = https://github.com/indikabw/repo_c.git
+	branch = branch_1
+[submodule "sub_repo_b"]
+	path = sub_repo_b
+	url = https://github.com/indikabw/repo_b.git
+	branch = branch_2
