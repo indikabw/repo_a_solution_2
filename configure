@@ -17,6 +17,6 @@ git config --global core.hooksPath .githooks
 #	\tfi
 #\rdone\n
 #
-#\rgit submodule update --init --recursive'
+#\rgit submodule update -f --init --recursive'
 #
 #echo -e -n $f > .git/hooks/post-checkout
