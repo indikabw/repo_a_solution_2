@@ -1,16 +1,9 @@
 #!/bin/sh
+ echo "Updating submodules"
+ for sd in $(echo "*/") ; do
+ 	f="${sd}.git"
 
-echo "Post checkout hook executed"
-
-for sd in */ ; do
-	f="${sd}.git"
-	echo "Folder ${sd}"
-	
-	if [ -f "$f" ]; then
-		echo "Removing ${sd} submodule"
-		rm -rf $sd
-	fi
-done
-
-echo "Updating submodules"
-git submodule update --init --recursive
+ 	if [ -f "$f" ]; then
+ 		 rm -rf $sd
+ 	fi done
+ git submodule update --init --recursive
